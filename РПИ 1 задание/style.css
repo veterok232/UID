@@ -1,0 +1,642 @@
+@import url(/Fonts/font.css);
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+body {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 745px;
+    background-image: url(Images/First/Livello\ 1.png);
+    background-repeat: no-repeat;
+}
+
+.header-container header {
+    margin: 0 0 0 60px;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 38px;
+    margin-left: 25px;
+
+    font-size: 16px;
+    letter-spacing: 2.6px;
+    color: #ffffff;
+    font-weight: normal;
+    font-family: "Gotham Rounded";
+}
+
+.header-navigation ul {
+    display: flex;
+    align-items: center;
+}
+
+#header-logo {
+    margin: 0 98px 25px 98px;
+}
+
+.header-navigation ul li {
+    margin: 0 70px 0 0;
+}
+
+.header-navigation #photoapp {
+    margin: 0 0 0 0;
+}
+
+.header-navigation #home {
+    margin: 0 62px 0 10px;
+}
+
+.header-navigation #design {
+    margin: 0 75px 0 0;
+}
+
+.header-navigation a:hover {
+    color: rgb(154, 218, 190);
+    cursor: pointer;
+}
+
+.yourlife {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yourlife_get-started {
+    margin: 224px auto;
+}
+
+.yourlife_get-started .firstline {
+    display: flex;
+    font-size: 36px;
+    letter-spacing: 5.35px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Gotham Rounded";
+    margin: 0 0 0 5px;
+}
+
+.yourlife_get-started .secondline {
+    display: flex;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    font-weight: normal;
+    font-family: "Gotham Rounded book";
+    margin: 14px 0 0 90px;
+}
+
+.yourlife_get-started .btn_get-started {
+    display: flex;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    color: #ffffff;
+    font-weight: normal;
+    font-family: "Gotham Rounded";
+
+    margin: 22px 0 0 172px;
+    padding: 19px 0 0 31px;
+    width: 166px;
+    height: 49px;
+    border: none;
+    border-radius: 2px;
+    background-color: #16a085;
+    text-align: center;
+    text-decoration: none;
+}
+
+.yourlife_get-started .btn_get-started:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #138a72;
+    color: #c6e9e2;
+    opacity: 0.9;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.yourlife_bottom-icons {
+    margin: -2.5px 0 0 10px;
+}
+
+.yourlife_bottom-icons img {
+    margin: 0 12px 0 0;
+}
+
+.yourlife_bottom-icons a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+b {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 21px;
+    color: #16a085;
+    font-weight: bold;
+    font-family: "Gotham Rounded";
+}
+
+p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 24px;
+    color: #373737;
+    font-family: "Gotham Rounded book";
+}
+
+.rappresent {
+    overflow: hidden;
+    height: 492px;
+    background-color: #f5f6f7;
+}
+
+.rappresent img {
+    float: right;
+    margin: 92px 125px 0 0;
+}
+
+.rappresent_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 128px;
+}
+
+.rappresent_content h2 {
+    letter-spacing: 2.7px;
+    width: 450px;
+    padding: 110px 0 38px 0;
+}
+
+.rappresent_content p {
+    letter-spacing: 1.8px;
+    width: 450px;
+    padding: 0 0 41px 0;
+}
+
+.rappresent_content .btn_get-started {
+    display: flex;
+    font-size: 12px;
+    letter-spacing: 1.9px;
+    line-height: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Gotham Rounded";
+
+    margin: 0px 0 0 0;
+    padding: 19px 0 0 43px;
+    width: 192px;
+    height: 51px;
+    border: none;
+    border-radius: 3px;
+    background-color: #16a085;
+    text-align: center;
+    text-decoration: none;
+}
+
+.rappresent_content .btn_get-started:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #138a72;
+    color: #c6e9e2;
+    opacity: 0.9;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.design {
+    overflow: hidden;
+    height: 560px;
+    background-color: #ffffff; 
+}
+
+.design img {
+    float: left;
+    margin: 145px 0 0 125px;
+}
+
+.design_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 326px;
+}
+
+.design_content h2 {
+    letter-spacing: 2.7px;
+    width: 450px;
+    padding: 142px 0 34.5px 0;
+}
+
+.design_content .first_par {
+    letter-spacing: 1.8px;
+    width: 450px;
+    line-height: 23px;
+    padding: 0 0 36px 3px;
+}
+
+.design_content .btn_get-started {
+    display: flex;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Gotham Rounded";
+
+    margin: 0 0 40px 2px;
+    padding: 16px 0 0 43px;
+    width: 192px;
+    height: 51px;
+    border: none;
+    border-radius: 3px;
+    background-color: #16a085;
+    text-align: center;
+    text-decoration: none;
+}
+
+.design_content .btn_get-started:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #138a72;
+    color: #c6e9e2;
+    opacity: 0.9;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.design_content .number {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 22px;
+    color: #373737;
+    font-weight: bold;
+    font-family: "Gotham Rounded";
+    margin: 0 0 0 2px;
+}
+
+.design_content .number .third_num {
+    margin-left: -1px;
+}
+
+.design_content .angles {
+    display: flex;
+    flex-direction: row;
+    margin: 2px 0 0 3px;
+}
+
+.design_content .angles img {
+    margin: 0 20px 0 0;
+}
+
+.design_content .angles img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.our_community {
+    position: relative;
+    height: 483px;
+    background-color: #f5f6f7;
+}
+
+.our_community .angles {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 1113px;
+    top: 94px;
+}
+
+.our_community .angles li {
+    margin-right: 16px;
+}
+
+.our_community .angles img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.our_community_content {
+    padding: 119px 120px 0 120px;
+}
+
+.our_community_content .logo-text {
+    float: left;
+    width: 230px;
+    margin: 0 20px 0 0;
+}
+
+.our_community_content .logo-text img {
+    margin: 45px 0 25px 66px;
+}
+
+.our_community_content .logo-text h2 {
+    font-size: 16px;
+    letter-spacing: 2.4px;
+    line-height: 20px;
+    color: #373737;
+    margin: 0 0 18px 9px;
+}
+
+.our_community_content .logo-text p {
+    width: 177px;
+    height: 177px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    line-height: 12px;
+    color: #373737;
+    font-weight: 500;
+    font-family: "Gotham Rounded";
+    text-align: center;
+    margin: 0 0 0 10px;
+}
+
+.our_community_content .images img {
+    width: 370px;
+}
+
+.our_community_content .images {
+    float: right;
+    width: 790px;
+}
+
+.our_community_content .images .first_column {
+    float: left;
+    width: 370px;
+    margin: 0 15px 0 15px;
+}
+
+.our_community_content .images .second_column {
+    float: right;
+    width: 370px;
+    margin: 0 10px 0 0;
+}
+
+.subscribe {
+    position: relative;
+    overflow: hidden;
+}
+
+.subscribe_content {
+    position: absolute;
+    top: 349px;
+    left: 402.5px;
+}
+
+.subscribe_content h2 {
+    font-size: 24px;
+    letter-spacing: 3.6px;
+    color: #ffffff;
+}
+
+.subscribe_content .input_email {
+    position: absolute;
+    top: 54px;
+    left: 65px;
+    width: 257px;
+    height: 57px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+
+    font-size: 16px;
+    letter-spacing: 2.3px;
+    color: #373737;
+    font-weight: bold;
+    font-family: "Gotham Rounded";
+    padding: 2px 0 0 22px;
+}
+
+.subscribe_content .btn_submit_email {
+    position: absolute;
+    top: 54px;
+    left: 344px;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    width: 64px;
+    height: 59px;
+    
+    background-color: #16a085;;
+    background-image: url(/Images/Fifth/fa-check.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.subscribe_content .btn_submit_email:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #138a72;
+    opacity: 0.9;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.download {
+    height: 396px;
+    background-color: #f5f6f7;
+}
+
+.download_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download_content h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #373737;
+    margin: 84px 0 8px 0;
+}
+
+.download_content p {
+    width: 877px;
+    font-size: 12px;
+    letter-spacing: 1.85px;
+    line-height: 22.35px;
+    color: #373737;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 42px 0;
+}
+
+.download_content .download_buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.download_content .apple {
+    display: flex;
+    flex-direction: row;
+    margin: 0 26px 0 -2px;
+}
+
+.download_content .googleplay {
+    display: flex;
+    flex-direction: row;
+}
+
+.download_content .btn_apple {
+    font-size: 16px;
+    letter-spacing: 2.2px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Gotham Rounded";
+
+    padding: 6px 50px 0 0px;
+    width: 240px;
+    height: 55px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    background-color: #1abc9c;
+    text-align: center;
+    text-decoration: none;
+}
+
+.download_content .btn_icon_apple {
+    padding: 20px 0 0 24px;
+    width: 56px;
+    height: 55px;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    background-color: #16a085;
+    text-align: center;
+    text-decoration: none;
+
+    background-image: url(/Images/Sixth/fa-apple.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.download_content .apple:hover .btn_apple {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #138a72;
+    color: #c6e9e2;
+    opacity: 0.9;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.download_content .apple:hover .btn_icon_apple {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #1abc9c;
+    opacity: 0.9;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.download_content .btn_googleplay {
+    display: flex;
+    font-size: 16px;
+    letter-spacing: 3.9px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Gotham Rounded";
+
+    padding: 19px 0 0 32px;
+    width: 240px;
+    height: 55px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    background-color: #1abc9c; 
+    text-align: center;
+    text-decoration: none;
+}
+
+.download_content .btn_icon_googleplay {
+    padding: 20px 0 0 24px;
+    width: 56px;
+    height: 55px;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    background-color: #16a085;
+    text-align: center;
+    text-decoration: none;
+
+    background-image: url(/Images/Sixth/fa-android.png);
+    background-position: 16px 14px;
+    background-repeat: no-repeat;
+}
+
+.download_content .googleplay:hover .btn_googleplay {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #138a72;
+    color: #c6e9e2;
+    opacity: 0.9;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.download_content .googleplay:hover .btn_icon_googleplay {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #1abc9c;
+    opacity: 0.9;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+footer {
+    position: relative;
+    height: 90px;
+}
+
+.footer-navigation ul {
+    display: flex;
+    flex-direction: row;
+    margin: 41px 0 18px 126px;
+
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #373737;
+    font-weight: bold;
+    font-family: "Gotham Rounded";
+}
+
+.footer-navigation li {
+    margin: 0 7px 0 0;
+}
+
+.footer-navigation a {
+    color: #373737;
+}
+
+.footer-navigation p {
+    font-size: 14px;
+    letter-spacing: 2.1px;
+    color: #373737;
+    font-weight: bold;
+    font-family: "Gotham Rounded";
+    margin: 0 0 0 127px;
+}
+
+.footer-logo {
+    position: absolute;
+    top: -8px; 
+    right: 130px;   
+}
+
+.footer-navigation a:hover {
+    color: rgb(117, 167, 145);
+    cursor: pointer;
+}
