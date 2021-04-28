@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="owf.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <form id="js-weather">
+    <div id="city" contenteditable="true"></div>
+    <i id="weather-icon" class="owf"></i><br>
+    <span class="humidity"></span>
+    <span class="temperature"></span><br>
+    <span class="wind"></span>
+    <span class="weather-description"></span>
+  </form>
+  
+  <time class="time"></time>
+  <h1 class="greeting_box">
+    <span class="greeting"></span>
+    <span class="name" contenteditable="true"></span>
+  </h1>
+  <button class="btn_bgImage">Next image</button>
+  <h2 class="focus_msg1">What Is Your Focus For Today?</h2>
+  <div class="focus_box">
+    <form id="focus_form">
+      <input id="focus_input" autocomplete="off">
+    </form>
+    <button class="focus_reset hidden"></button>
+  </div>
+  <figure class="quote">
+    <blockquote>
+    </blockquote>
+    <figcaption> 
+    </figcaption>
+  </figure>
+  
+  <script src="time.js"></script>
+  <script src="greeting.js"></script>
+  <script src="focus.js"></script>
+  <script src="changeImages.js"></script>
+  <script src="quotes.js"></script>
+  <script src="weather.js"></script>
+</body>
+</html>

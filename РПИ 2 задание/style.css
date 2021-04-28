@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+  text-shadow: black 0 0 8px; 
+  background-repeat: no-repeat;
+  /*background-image: url("https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/night/17.jpg");*/
+  transition: background-image 1s ease-in-out;
+}
+
+.time {
+  font-size: 9.5vw;
+}
+
+.name {
+  display: inline-block;
+  cursor: pointer;
+  max-width: 30vw;
+}
+
+.btn_bgImage {
+  background-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6vw;
+  text-align: center;
+  color: white;
+  text-shadow: black 0 0 8px; 
+  border: none;
+  margin-bottom: 0.5rem;
+}
+
+.btn_bgImage:hover {
+  opacity: 0.8;
+  border-radius: 10px;
+  box-shadow: black 0 0 5px;
+  transition: 0.5s;
+  color: #c5ffe4;
+  cursor: pointer;
+}
+
+.focus_box {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  width: fit-content;
+}
+
+#focus_form {
+  width: fit-content;
+}
+
+#focus_input {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px white;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  text-shadow: black 0 0 8px;
+  font-size: 2vw;
+  text-align: center;
+  box-sizing: border-box;
+  width: fit-content;
+}
+
+.focus_reset {
+  display: inline;
+  background-image: url(assets/images/reset_focus.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 2.2vw;
+  height: 2.2vw;
+  border-radius: 50%;
+  border: none;
+  background-color: #000000;
+  opacity: 0.7;
+  margin-left: 1vw;
+}
+
+.focus_reset:hover {
+  opacity: 0.4;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.greeting_box {
+  font-size: 2.6vw;
+  margin-bottom: 0.5rem;
+}
+
+.focus_msg1 {
+  font-size: 2.2vw;
+  margin-bottom: 0.2rem;
+}
+
+.focus_msg_animation_show {
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.focus_msg_animation_hide {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.border_hide {
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.date {
+  font-size: 3vw;
+  margin-bottom: 0.5em;
+  margin-top: -0.3em;
+}
+
+.quote {
+  position: fixed;
+  bottom: 0;
+  font: 'Quicksand', sans-serif;
+  font-size: 1.5vw;
+  margin: 0;
+  padding: 1em;
+  border-radius: 1em;
+  cursor: pointer;
+  max-width: 75vw;
+}
+.quote figcaption,
+.quote blockquote {
+  margin-top: 0.3rem;
+  margin-bottom: -1rem;
+}
+.quote figcaption {
+  text-align: center;
+}
+
+#js-weather {
+  font-size: 1.2vw;
+}
