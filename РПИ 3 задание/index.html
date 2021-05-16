@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="owf.css" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+    <title>Fancy-Weather</title>
+</head>
+<body>
+    <header>
+      <div class="left_buttons">
+        <button id="btn_reset" class="left_item"></button>
+        <select id="select_language" class="left_item">
+          <option value="1" selected>en</option>
+          <option value="2">ru</option>
+          <option value="3">be</option>
+        </select>
+        <form class="temperature_format">
+          <input type="radio" name="temperature_format" class="left_item" id="btn_celsium" value="1" checked>
+          <label for="btn_celsium">°C</label>
+          <input type="radio" name="temperature_format" class="left_item" id="btn_fahrenheit" value="2">
+          <label for="btn_fahrenheit">°F</label>
+        </form>
+      </div>
+      <div class="right_buttons">
+        <form id="weather_city_form">
+          <input type="text" id="city" name="city" min="1" placeholder="Enter city" minlength="1" autocomplete="none">
+          <input type="button" id="voice" name="voice">
+          <input type="submit" id="submit_city" name="submit_city" value="SEARCH">
+        </form> 
+      </div>
+    </header>
+    <main>
+      <section class="weather_section">
+        <div class="info_group">
+          <h2 id="current_location">-, -</h2>
+          <div class="date_time">
+            <span id="date">Mon 28 October</span>
+            <span id="time"> 17:23</span>
+          </div>
+        </div>
+        <div class="today">
+          <div id="today_temperature">
+            -
+          </div>
+          <div class="today_info">
+            <div class="today_info_icon">
+              <i id="today_icon" class="owf"></i>
+            </div>
+            <div class="today_info_main">
+              <ul>
+                <li id="today_info_overcast">OVERCAST</li>
+                <li id="today_info_feels">FEELS LIKE: -</li>
+                <li id="today_info_wind">WIND: -</li>
+                <li id="today_info_humidity">HUMIDITY: -</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="next_days">
+          <div class="next_day next_first">
+            <h2 id="first_day">TUESDAY</h2>
+            <div class="next_day_info">
+              <div id="first_day_temperature" class="next_day_temperature">-</div>
+              <i id="first_day_icon" class="owf next_day_icon"></i>
+            </div>
+          </div>
+          <div class="next_second">
+            <h2 id="second_day">WEDNESDAY</h2>
+            <div class="next_day_info">
+              <div id="second_day_temperature" class="next_day_temperature">-</div>
+              <i id="second_day_icon" class="owf next_day_icon"></i>
+            </div>
+          </div>
+          <div class="next_third">
+            <h2 id="third_day">THURSDAY</h2>
+            <div class="next_day_info">
+              <div id="third_day_temperature" class="next_day_temperature">-</div>
+              <i id="third_day_icon" class="owf next_day_icon"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="map_section">
+        <div id="map">
+        </div>
+        <div id="location">
+          <div id="latitude"></div>
+          <div id="longitude"></div>
+        </div>
+      </section>
+    </main>
+    
+    <!--
+      <script src="greeting.js"></script>
+      <script src="focus.js"></script>
+      <script src="quotes.js"></script>
+    -->
+    <script src="map.js"></script>
+    <script src="time.js"></script>
+    <script src="changeImages.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>
