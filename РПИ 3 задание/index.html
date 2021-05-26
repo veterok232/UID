@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="owf.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/owf.css" />
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
     <title>Fancy-Weather</title>
@@ -12,11 +12,10 @@
 <body>
     <header>
       <div class="left_buttons">
-        <button id="btn_reset" class="left_item"></button>
+        <button id="btn_reset" class="left_item"><img id="reset" src="assets/icons/reset.png"></button>
         <select id="select_language" class="left_item">
-          <option value="1" selected>en</option>
-          <option value="2">ru</option>
-          <option value="3">be</option>
+          <option id="1" value="1">en</option>
+          <option id="2" value="2">ru</option>
         </select>
         <form class="temperature_format">
           <input type="radio" name="temperature_format" class="left_item" id="btn_celsium" value="1" checked>
@@ -38,8 +37,8 @@
         <div class="info_group">
           <h2 id="current_location">-, -</h2>
           <div class="date_time">
-            <span id="date">Mon 28 October</span>
-            <span id="time"> 17:23</span>
+            <span id="date">Monday 1, January</span>
+            <span id="time">00:00:00</span>
           </div>
         </div>
         <div class="today">
@@ -52,7 +51,7 @@
             </div>
             <div class="today_info_main">
               <ul>
-                <li id="today_info_overcast">OVERCAST</li>
+                <li id="today_info_overcast">WEATHER: -</li>
                 <li id="today_info_feels">FEELS LIKE: -</li>
                 <li id="today_info_wind">WIND: -</li>
                 <li id="today_info_humidity">HUMIDITY: -</li>
@@ -85,8 +84,7 @@
         </div>
       </section>
       <section class="map_section">
-        <div id="map">
-        </div>
+        <div id="map"></div>
         <div id="location">
           <div id="latitude"></div>
           <div id="longitude"></div>
@@ -94,14 +92,11 @@
       </section>
     </main>
     
-    <!--
-      <script src="greeting.js"></script>
-      <script src="focus.js"></script>
-      <script src="quotes.js"></script>
-    -->
-    <script src="map.js"></script>
-    <script src="time.js"></script>
-    <script src="changeImages.js"></script>
-    <script src="weather.js"></script>
+    <script src="js/language.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/changeImages.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/voice.js"></script>
 </body>
 </html>
